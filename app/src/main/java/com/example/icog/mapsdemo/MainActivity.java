@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity
     public static float MIN_ZOOM = 7;
 
     private int maptype = 1;
-    private int showZones = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -136,7 +134,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        final boolean success = googleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json));
+//        final boolean success = googleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json));
 
         mMap = googleMap;
         IconGenerator iconFactory = new IconGenerator(this);
@@ -144,19 +142,8 @@ public class MainActivity extends AppCompatActivity
         iconFactory.setTextAppearance(R.style.iconGenText);
 
         try {
-//            KmlLayer ethiopiaLayer = new KmlLayer(mMap,R.raw.ethiopia,getApplicationContext());
-            KmlLayer ZoneLayer = new KmlLayer(mMap,R.raw.zones,getApplicationContext());
-            KmlLayer woredaLayer = new KmlLayer(mMap,R.raw.woreda,getApplicationContext());
-            KmlLayer regionLayer = new KmlLayer(mMap,R.raw.region,getApplicationContext());
-            KmlLayer zoneAnnotationLayer = new KmlLayer(mMap,R.raw.annotation,getApplicationContext());
-
-
-//            ethiopiaLayer.addLayerToMap();
-            regionLayer.addLayerToMap();
-            ZoneLayer.addLayerToMap();
-            zoneAnnotationLayer.addLayerToMap();
-//            woredaLayer.addLayerToMap();
-
+            KmlLayer ethiopiaLayer = new KmlLayer(mMap,R.raw.afar,getApplicationContext());
+            ethiopiaLayer.addLayerToMap();
         } catch (XmlPullParserException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -211,5 +198,7 @@ public class MainActivity extends AppCompatActivity
             }
 
         });
+
+        
     }
 }
