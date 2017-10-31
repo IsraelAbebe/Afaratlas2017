@@ -115,6 +115,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             Toast.makeText(getApplicationContext(), "Recent Works Clicked", Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_gallery) {
+             Intent i = new Intent(this, galleryShow.class);
+            startActivity(i);
             Toast.makeText(getApplicationContext(), "Gallery Clicked", Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_slideshow) {
             Toast.makeText(getApplicationContext(), "Contact us Clicked", Toast.LENGTH_LONG).show();
@@ -141,7 +143,7 @@ public class MainActivity extends AppCompatActivity
         iconFactory.setTextAppearance(R.style.iconGenText);
 
         try {
-            KmlLayer ethiopiaLayer = new KmlLayer(mMap,R.raw.afar,getApplicationContext());
+            KmlLayer ethiopiaLayer = new KmlLayer(mMap,R.raw.afaralex,getApplicationContext());
             ethiopiaLayer.addLayerToMap();
         } catch (XmlPullParserException e) {
             e.printStackTrace();
@@ -167,11 +169,11 @@ public class MainActivity extends AppCompatActivity
         MarkerOptions zone5marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 5")))
                 .position(zone5).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
 
-        mMap.addMarker(zone1marker).setTitle("Zone 1");
-        mMap.addMarker(zone2marker).setTitle("Zone 2");
-        mMap.addMarker(zone3marker).setTitle("Zone 3");
-        mMap.addMarker(zone4marker).setTitle("Zone 4");
-        mMap.addMarker(zone5marker).setTitle("Zone 5");
+        mMap.addMarker(zone1marker).setTitle("Zone1");
+        mMap.addMarker(zone2marker).setTitle("Zone2");
+        mMap.addMarker(zone3marker).setTitle("Zone3");
+        mMap.addMarker(zone4marker).setTitle("Zone4");
+        mMap.addMarker(zone5marker).setTitle("Zone5");
 
         mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(8.50, 38.90), new LatLng(15.50, 42)));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.815915, 40.824674), 6.0f));
@@ -190,7 +192,7 @@ public class MainActivity extends AppCompatActivity
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                Toast.makeText(getApplicationContext(), "YOU CLICKED ON " + marker.getTitle(), Toast.LENGTH_LONG).show();
+//                Toast.makeText(getApplicationContext(), "YOU CLICKED ON " + marker.getTitle(), Toast.LENGTH_LONG).show();
                 i.putExtra("Title", marker.getTitle());
                 startActivity(i);
                 return false;

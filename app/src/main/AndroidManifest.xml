@@ -38,7 +38,8 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".DataViewActivity"></activity>
+        <activity android:name=".DataViewActivity" />
+        <activity android:name="com.example.icog.mapsdemo.galleryShow"></activity>
     </application>
 
 </manifest>
