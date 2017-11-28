@@ -27,13 +27,13 @@ public class DataViewActivity extends AppCompatActivity {
         if(message.equals("Zone1")) {
             textView2.setText(getText(R.string.Zone1));
         }else if(message.equals("Zone2")) {
-            textView2.setText(getText(R.string.Zone1));
+            textView2.setText(getText(R.string.Zone2));
         }else if(message.equals("Zone3")) {
-            textView2.setText(getText(R.string.Zone1));
+            textView2.setText(getText(R.string.Zone3));
         }else if(message.equals("Zone4")) {
-            textView2.setText(getText(R.string.Zone1));
+            textView2.setText(getText(R.string.Zone4));
         }else if(message.equals("Zone5")) {
-            textView2.setText(getText(R.string.Zone1));
+            textView2.setText(getText(R.string.Zone5));
         }
     }
 }

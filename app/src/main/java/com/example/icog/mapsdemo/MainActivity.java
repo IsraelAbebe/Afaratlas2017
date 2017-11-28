@@ -115,11 +115,13 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             Toast.makeText(getApplicationContext(), "Recent Works Clicked", Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_gallery) {
-             Intent i = new Intent(this, galleryShow.class);
+            Intent i = new Intent(this, galleryShow.class);
             startActivity(i);
             Toast.makeText(getApplicationContext(), "Gallery Clicked", Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_slideshow) {
-            Toast.makeText(getApplicationContext(), "Contact us Clicked", Toast.LENGTH_LONG).show();
+            Intent i = new Intent(this, Contact.class);
+            startActivity(i);
+            Toast.makeText(getApplicationContext(), "Gallery Clicked", Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_manage) {
             Toast.makeText(getApplicationContext(), "Tools Clicked", Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_share) {
