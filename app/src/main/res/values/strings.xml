@@ -1,9 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Afar atlas 2017</string>
+    <string name="app_name">Afar Atlas </string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_maps">Map</string>
+
+    <string name="Zone1"><b> Awusi Rasu or Administrative Zone 1 </b>  is the biggest zone in Afar NRS with approximate areal coverage of 34,
+        846KM2 and perimeter of 918KM. The zone is bordered on the south by Administrative Zone 3, on the southwest by Administrative Zone 5,
+        on the west by Amhara NRS, on the northwest by Administrative Zone 4, on the north by Administrative Zone 2 and shared international
+        boundary with Eritrea on the northeast and Djibouti on the east.The zone has a total population of 410,790 of whom 224,656 are men
+        and 186,134 women (CSA, 2007).</string>
+    <string name="Zone2"><b>Kilbet Rasu or Administrative Zone 2</b> is one of the five zones of the Afar NRS with approximate areal coverage of
+        <i>27,455KM2</i> and perimeter of<i> 812KM</i>. The zone is bordered on the south by Administrative Zone 1, on the southwest by Administrative Zone 4,
+        on the west by Tigray NRS and shared international boundary with Eritrea on the northeast. The zone is highly endowed with minerals.
+        The zone has a total population of 350,111of whom 195,404 are men and 154,707 women (CSA, 2007). </string>
+    <string name="Zone3"><b>Administrative Zone 3 or Gabi Rasu </b> is one among five zones in Afar NRS with approximate areal coverage of
+        <i>16,175KM2</i> and perimeter of 723KM. The zone is bordered on the south by Oromiya NRS, on the southwest by Amhara NRS,
+        on the west by the administrative Zone 5, on the north by Administrative Zone 1 and on the east by the Somali NRS.
+        The zone has a total population of 198,751 of whom 108,995 are men and 89,756 women (CSA, 2007). </string>
+    <string name="Zone4"><b>Fantena Rasu or Administrative Zone 4 </b>
+        is located on the western part of Afar NRS with approximate areal coverage of
+        10,888KM2 and perimeter of 444KM. The zone is bordered on the south and east Administrative Zone 1, on the southwest by Tigray NRS,
+        on the north by the Administrative Zone 2. The administrative center of the zone is Kelewan. The zone has a total population of 246,822
+        of whom 140,741 are men and 106,081 women (CSA, 2007). </string>
+    <string name="Zone5"><b>Hari Rasu or Administrative Zone 5 </b> \n is one of the five zones of the Afar NRS with approximate areal coverage of
+        5,442KM2 and perimeter of 495KM. The zone is bordered on the south and east by Administrative Zone 3, on the west by
+        Amhara NRS and on the north by Administrative Zone 1. The zone has a total population of 183,799 of whom 105,321 are men
+        and 78,478 women (CSA, 2007).</string>
+
 </resources>
