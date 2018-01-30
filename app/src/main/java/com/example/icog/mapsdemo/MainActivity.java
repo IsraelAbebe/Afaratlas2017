@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity
     private GoogleMap mMap;
     public static float MAX_ZOOM = 20;
     public static float MIN_ZOOM = 7;
+    private int ZONE_NUM = 0 ;
 
     private int maptype = 1;
     @Override
@@ -122,13 +123,26 @@ public class MainActivity extends AppCompatActivity
             Intent i = new Intent(this, Contact.class);
             startActivity(i);
             Toast.makeText(getApplicationContext(), "Gallery Clicked", Toast.LENGTH_LONG).show();
-        } else if (id == R.id.nav_manage) {
-            Toast.makeText(getApplicationContext(), "Tools Clicked", Toast.LENGTH_LONG).show();
-        } else if (id == R.id.nav_share) {
-            Toast.makeText(getApplicationContext(), "Share Clicked", Toast.LENGTH_LONG).show();
-        } else if (id == R.id.about) {
-            Toast.makeText(getApplicationContext(), "About Clicked", Toast.LENGTH_LONG).show();
+        }else if (id == R.id.Zone1tab) {
+            ZONE_NUM = 1;
+        }else if (id == R.id.Zone2tab) {
+            ZONE_NUM = 2;
+        }else if (id == R.id.Zone3tab) {
+            ZONE_NUM = 3;
+        }else if (id == R.id.Zone4tab) {
+            ZONE_NUM = 4;
+        }else if (id == R.id.Zone5tab) {
+            ZONE_NUM = 5;
         }
+
+
+//        else if (id == R.id.nav_manage) {
+//            Toast.makeText(getApplicationContext(), "Tools Clicked", Toast.LENGTH_LONG).show();
+//        } else if (id == R.id.nav_share) {
+//            Toast.makeText(getApplicationContext(), "Share Clicked", Toast.LENGTH_LONG).show();
+//        } else if (id == R.id.about) {
+//            Toast.makeText(getApplicationContext(), "About Clicked", Toast.LENGTH_LONG).show();
+//        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -179,6 +193,23 @@ public class MainActivity extends AppCompatActivity
 
         mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(8.50, 38.90), new LatLng(15.50, 42)));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.815915, 40.824674), 6.0f));
+        if(ZONE_NUM == 0) {
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(8.50, 38.90), new LatLng(15.50, 42)));
+        }else if (ZONE_NUM == 1){
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(7, 35), new LatLng(12, 39)));
+        }else if (ZONE_NUM == 2){
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(8.50, 38.90), new LatLng(15.50, 42)));
+        }else if (ZONE_NUM == 3){
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(8.50, 38.90), new LatLng(15.50, 42)));
+        }else if (ZONE_NUM == 4){
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(8.50, 38.90), new LatLng(15.50, 42)));
+        }else if (ZONE_NUM == 5){
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(8.50, 38.90), new LatLng(15.50, 42)));
+        }
+
+
+
+
 
         mMap.setMinZoomPreference(MIN_ZOOM);
         mMap.setMaxZoomPreference(MAX_ZOOM);
