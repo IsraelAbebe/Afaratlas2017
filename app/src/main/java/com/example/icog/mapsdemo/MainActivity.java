@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback {
 
     private GoogleMap mMap;
-    public static float MAX_ZOOM = 20;
+    public static float MAX_ZOOM = 11;
     public static float MIN_ZOOM = 7;
 
     public int ZOOM_TO_1 = 0;
@@ -67,11 +67,6 @@ public class MainActivity extends AppCompatActivity
 //                        .setAction("Action", null).show();
             }
         });
-
-        if(REFRESH == 1){
-            onMapReady(mMap);
-            REFRESH = 0 ;
-        }
 
 
 
@@ -135,27 +130,24 @@ public class MainActivity extends AppCompatActivity
             startActivity(i);
             Toast.makeText(getApplicationContext(), "Gallery Clicked", Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_manage) {
-
             Toast.makeText(getApplicationContext(), "Tools Clicked", Toast.LENGTH_LONG).show();
+        }else if (id == R.id.full_map) {
+            ZOOM_TO_1 = 0;
+            onMapReady(mMap);
         } else if (id == R.id.zone_one) {
             ZOOM_TO_1 = 1;
-            Toast.makeText(getApplicationContext(), "Share Clicked", Toast.LENGTH_LONG).show();
             onMapReady(mMap);
         } else if (id == R.id.zone_two) {
             ZOOM_TO_1 = 2;
-            Toast.makeText(getApplicationContext(), "Share Clicked", Toast.LENGTH_LONG).show();
             onMapReady(mMap);
         }else if (id == R.id.zone_three) {
             ZOOM_TO_1 = 3;
-            Toast.makeText(getApplicationContext(), "Share Clicked", Toast.LENGTH_LONG).show();
             onMapReady(mMap);
         }else if (id == R.id.zone_four) {
             ZOOM_TO_1 = 4;
-            Toast.makeText(getApplicationContext(), "Share Clicked", Toast.LENGTH_LONG).show();
             onMapReady(mMap);
         }else if (id == R.id.zone_five) {
             ZOOM_TO_1 = 5;
-            Toast.makeText(getApplicationContext(), "Share Clicked", Toast.LENGTH_LONG).show();
             onMapReady(mMap);
         }
 
@@ -210,24 +202,24 @@ public class MainActivity extends AppCompatActivity
             mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(8.50, 38.90), new LatLng(15.50, 42)));
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.815915, 40.824674), 6.0f));
         }else if(ZOOM_TO_1 == 1){
-            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(11.55, 40.32),new LatLng(12.00, 41.00)));
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(11.45, 40.40),new LatLng(12.19, 41.52)));
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.776444, 41.275195), 8.0f));
 
         }else if(ZOOM_TO_1 == 2){
-            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(11.55, 40.32),new LatLng(12.00, 41.00)));
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.776444, 41.275195), 8.0f));
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(12.84, 39.91),new LatLng(15.22, 42.0)));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(13.85, 40.40), 8.0f));
 
         }else if(ZOOM_TO_1 == 3){
-            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(11.55, 40.32),new LatLng(12.00, 41.00)));
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.776444, 41.275195), 8.0f));
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(9.09,39.76),new LatLng(10.74, 41.04)));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(9.95,40.81), 8.5f));
 
         }else if(ZOOM_TO_1 == 4){
-            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(11.55, 40.32),new LatLng(12.00, 41.00)));
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.776444, 41.275195), 8.0f));
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(12.10,39.87),new LatLng(12.70,40.58)));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(12.50,40.19), 8.5f));
 
         }else if(ZOOM_TO_1 == 5){
-            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(11.55, 40.32),new LatLng(12.00, 41.00)));
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.776444, 41.275195), 8.0f));
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(9.72,39.9),new LatLng(11.57,40.76)));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(10.37,40.27), 9.0f));
 
         }else{
             mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(11.55, 40.32),new LatLng(12.00, 41.00)));

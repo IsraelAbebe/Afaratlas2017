@@ -24,6 +24,9 @@
         <item android:title="Communicate">
             <menu>
                 <item
+                    android:id="@+id/full_map"
+                    android:title="Full Map" />
+                <item
                     android:id="@+id/zone_one"
                     android:title="Zone 1" />
 
