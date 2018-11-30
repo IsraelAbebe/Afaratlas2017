@@ -24,13 +24,32 @@
         <item android:title="Communicate">
             <menu>
                 <item
-                    android:id="@+id/nav_share"
-                    android:icon="@drawable/ic_menu_share"
-                    android:title="Share" />
+                    android:id="@+id/full_map"
+                    android:title="Full Map" />
                 <item
-                    android:id="@+id/about"
-                    android:icon="@drawable/about"
-                    android:title="About the App" />
+                    android:id="@+id/AboutAfar"
+                    android:title="About Afar" />
+
+                <item
+                    android:id="@+id/zone_one"
+                    android:title="Zone 1" />
+
+                <item
+                    android:id="@+id/zone_two"
+                    android:title="Zone 2" />
+
+                <item
+                    android:id="@+id/zone_three"
+                    android:title="Zone 3" />
+
+                <item
+                    android:id="@+id/zone_four"
+                    android:title="Zone 4" />
+
+                <item
+                    android:id="@+id/zone_five"
+                    android:title="Zone 5" />
+
             </menu>
         </item>
 

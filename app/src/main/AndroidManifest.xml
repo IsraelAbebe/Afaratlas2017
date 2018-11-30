@@ -11,13 +11,13 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@drawable/appicon"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@drawable/appicon"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:hardwareAccelerated="false"
-        android:largeHeap="true">
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -42,7 +42,13 @@
 
         <activity android:name=".DataViewActivity" />
         <activity android:name=".galleryShow" />
-        <activity android:name=".Contact"></activity>
+        <activity android:name=".Contact" />
+        <activity android:name="com.gmail.se.israel.abebe.Zone1_data" />
+        <activity android:name="com.gmail.se.israel.abebe.Zone2_data" />
+        <activity android:name="com.gmail.se.israel.abebe.Zone3_data" />
+        <activity android:name="com.gmail.se.israel.abebe.Zone4_data" />
+        <activity android:name="com.gmail.se.israel.abebe.Zone5_data" />
+        <activity android:name="com.gmail.se.israel.abebe.AfarInfo"></activity>
     </application>
 
 </manifest>

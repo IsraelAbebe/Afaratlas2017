@@ -2,6 +2,7 @@ package com.example.icog.mapsdemo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Debug;
 import android.support.design.widget.FloatingActionButton;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -14,6 +15,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.gmail.se.israel.abebe.AfarInfo;
+import com.gmail.se.israel.abebe.Zone1_data;
+import com.gmail.se.israel.abebe.Zone2_data;
+import com.gmail.se.israel.abebe.Zone3_data;
+import com.gmail.se.israel.abebe.Zone4_data;
+import com.gmail.se.israel.abebe.Zone5_data;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -34,11 +41,16 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback {
 
     private GoogleMap mMap;
-    public static float MAX_ZOOM = 20;
+    public static float MAX_ZOOM = 11;
     public static float MIN_ZOOM = 7;
     private int ZONE_NUM = 0 ;
 
+    public int ZOOM_TO_1 = 0;
+    public int ZOOM_TO_2 = 0;
     private int maptype = 1;
+
+    private int REFRESH = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +76,7 @@ public class MainActivity extends AppCompatActivity
 //                        .setAction("Action", null).show();
             }
         });
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -123,16 +136,30 @@ public class MainActivity extends AppCompatActivity
             Intent i = new Intent(this, Contact.class);
             startActivity(i);
             Toast.makeText(getApplicationContext(), "Gallery Clicked", Toast.LENGTH_LONG).show();
-        }else if (id == R.id.Zone1tab) {
-            ZONE_NUM = 1;
-        }else if (id == R.id.Zone2tab) {
-            ZONE_NUM = 2;
-        }else if (id == R.id.Zone3tab) {
-            ZONE_NUM = 3;
-        }else if (id == R.id.Zone4tab) {
-            ZONE_NUM = 4;
-        }else if (id == R.id.Zone5tab) {
-            ZONE_NUM = 5;
+        } else if (id == R.id.nav_manage) {
+            Toast.makeText(getApplicationContext(), "Tools Clicked", Toast.LENGTH_LONG).show();
+        }else if (id == R.id.AboutAfar) {
+            Intent i = getZoneIntent("AfarInfo");
+            startActivity(i);
+        }else if (id == R.id.full_map) {
+            ZOOM_TO_1 = 0;
+            onMapReady(mMap);
+        } else if (id == R.id.zone_one) {
+            ZOOM_TO_1 = 1;
+            onMapReady(mMap);
+        } else if (id == R.id.zone_two) {
+            ZOOM_TO_1 = 2;
+            onMapReady(mMap);
+        } else if (id == R.id.zone_three) {
+            ZOOM_TO_1 = 3;
+            onMapReady(mMap);
+        } else if (id == R.id.zone_four) {
+            ZOOM_TO_1 = 4;
+            onMapReady(mMap);
+        } else if (id == R.id.zone_five) {
+            ZOOM_TO_1 = 5;
+            onMapReady(mMap);
+
         }
 
 
@@ -159,7 +186,7 @@ public class MainActivity extends AppCompatActivity
         iconFactory.setTextAppearance(R.style.iconGenText);
 
         try {
-            KmlLayer ethiopiaLayer = new KmlLayer(mMap,R.raw.afaralex,getApplicationContext());
+            KmlLayer ethiopiaLayer = new KmlLayer(mMap, R.raw.afaralex, getApplicationContext());
             ethiopiaLayer.addLayerToMap();
         } catch (XmlPullParserException e) {
             e.printStackTrace();
@@ -191,6 +218,7 @@ public class MainActivity extends AppCompatActivity
         mMap.addMarker(zone4marker).setTitle("Zone4");
         mMap.addMarker(zone5marker).setTitle("Zone5");
 
+
         mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(8.50, 38.90), new LatLng(15.50, 42)));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.815915, 40.824674), 6.0f));
         if(ZONE_NUM == 0) {
@@ -211,6 +239,38 @@ public class MainActivity extends AppCompatActivity
 
 
 
+        if (ZOOM_TO_1 == 0) {
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(8.50, 38.90), new LatLng(15.50, 42)));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.815915, 40.824674), 6.0f));
+        } else if (ZOOM_TO_1 == 1) {
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(11.45, 40.40), new LatLng(12.19, 41.52)));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.776444, 41.275195), 8.0f));
+
+        } else if (ZOOM_TO_1 == 2) {
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(12.84, 39.91), new LatLng(15.22, 42.0)));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(13.85, 40.40), 8.0f));
+
+        } else if (ZOOM_TO_1 == 3) {
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(9.09, 39.76), new LatLng(10.74, 41.04)));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(9.95, 40.81), 8.5f));
+
+        } else if (ZOOM_TO_1 == 4) {
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(12.10, 39.87), new LatLng(12.70, 40.58)));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(12.50, 40.19), 8.5f));
+
+        } else if (ZOOM_TO_1 == 5) {
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(9.72, 39.9), new LatLng(11.57, 40.76)));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(10.37, 40.27), 9.0f));
+
+        } else {
+            mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(11.55, 40.32), new LatLng(12.00, 41.00)));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.776444, 41.275195), 8.0f));
+        }
+
+
+//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.815915, 40.824674), 6.0f));
+
+
         mMap.setMinZoomPreference(MIN_ZOOM);
         mMap.setMaxZoomPreference(MAX_ZOOM);
 
@@ -221,18 +281,38 @@ public class MainActivity extends AppCompatActivity
             mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         }
 
-        final Intent i = new Intent(this, DataViewActivity.class);
+//        final Intent i = new Intent(this, Zone1_data.class);
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-//                Toast.makeText(getApplicationContext(), "YOU CLICKED ON " + marker.getTitle(), Toast.LENGTH_LONG).show();
-                i.putExtra("Title", marker.getTitle());
+//                Debug.Log("CLICKED "+marker.getTitle());
+                Intent i = getZoneIntent(marker.getTitle());
                 startActivity(i);
                 return false;
             }
 
         });
 
-        
+
+    }
+
+    public Intent getZoneIntent(String name) {
+
+        Intent i = new Intent();
+
+        if (name.equals("Zone1")) {
+            i = new Intent(this, Zone1_data.class);
+        } else if (name.equals("Zone2")) {
+            i = new Intent(this, Zone2_data.class);
+        } else if (name.equals("Zone3")) {
+            i = new Intent(this, Zone3_data.class);
+        } else if (name.equals("Zone4")) {
+            i = new Intent(this, Zone4_data.class);
+        } else if (name.equals("Zone5")) {
+            i = new Intent(this, Zone5_data.class);
+        }else if (name.equals("AfarInfo")) {
+            i = new Intent(this, AfarInfo.class);
+        }
+        return i ;
     }
 }

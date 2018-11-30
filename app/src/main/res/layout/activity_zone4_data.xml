@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gmail.se.israel.abebe.Zone4_data">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/Zone_4_Title_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:textSize="30dp"
+                android:inputType="textPersonName"
+                android:text="Fenti Rasu  "
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"/>
+
+            <TextView
+                android:id="@+id/Zone_4_Title_1"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Zone_4_Title_main"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textSize="20dp"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="Fenti Rasu Educational Facilities"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                />
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/Zone4educational_img"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/zone_4_education"
+                android:layout_below="@+id/Zone_4_Title_1"/>
+
+            <TextView
+                android:id="@+id/Zone_4_Title_2"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Zone4educational_img"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="Fenti Rasu  Animal Health Facilities"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+
+                android:paddingTop="50dp"
+                android:textSize="20dp"/>
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/Zone4helth_img"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/zone_4_animal"
+                android:layout_below="@+id/Zone_4_Title_2"/>
+
+            <TextView
+                android:id="@+id/Zone_4_Title_3"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Zone4helth_img"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="Fenti Rasu Health Facilities"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+
+                android:paddingTop="50dp"
+                android:textSize="20dp"/>
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/Zone4helthfacilities_img"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/zone_4_helth"
+                android:layout_below="@+id/Zone_4_Title_3"/>
+
+
+
+            <TextView
+                android:id="@+id/Zone_4_Title_4"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Zone4helthfacilities_img"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="Fenti Rasu Religious Institutions"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+
+                android:paddingTop="50dp"
+                android:textSize="20dp"/>
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/Zone4riligious_img"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/zone_4_religion"
+                android:layout_below="@+id/Zone_4_Title_4"/>
+
+            <TextView
+                android:id="@+id/Zone_4_Title_5"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Zone4riligious_img"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="Fenti Rasu Water Schemes"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+
+                android:paddingTop="50dp"
+                android:textSize="20dp"/>
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/Zone4water_img"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/zone_4_water"
+                android:layout_below="@+id/Zone_4_Title_5"/>
+
+            <TextView
+                android:id="@+id/Zone_4_Title_6"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Zone4water_img"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="Fenti Rasu  Rural Villages"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+
+                android:paddingTop="50dp"
+                android:textSize="20dp"/>
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/Zone4village_img"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/zone_4_villages"
+                android:layout_below="@+id/Zone_4_Title_6"/>
+
+
+            <TextView
+                android:id="@+id/Zone_4_Title_7"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Zone4village_img"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="Urbans of Fenti Rasu "
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+
+                android:paddingTop="50dp"
+                android:textSize="20dp"/>
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/Zone4urban_img"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/zone_4_urban"
+                android:layout_below="@+id/Zone_4_Title_7"/>
+
+            <!--Meteorological Station in Fenti Rasu -->
+
+            <TextView
+                android:id="@+id/Zone_4_Title_8"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Zone4urban_img"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="Meteorological Station in Fenti Rasu "
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+
+                android:paddingTop="50dp"
+                android:textSize="20dp"/>
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/Zone4metrology_img"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/zone_4_metrology"
+                android:layout_below="@+id/Zone_4_Title_8"/>
+
+            <!--Public Services of Fenti Rasu -->
+
+
+            <TextView
+                android:id="@+id/Zone_4_Title_9"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Zone4metrology_img"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="Public Services of Fenti Rasu "
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+
+                android:paddingTop="50dp"
+                android:textSize="20dp"/>
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/Zone4pub_img"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/zone_4_public"
+                android:layout_below="@+id/Zone_4_Title_9"/>
+
+
+            <!--Commercial Services of Fenti Rasu -->
+
+            <!--<TextView-->
+                <!--android:id="@+id/Zone_4_Title_10"-->
+                <!--style="@style/AlertDialog.AppCompat.Light"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/Zone4pub_img"-->
+                <!--android:layout_weight="1"-->
+                <!--android:ems="10"-->
+                <!--android:enabled="false"-->
+                <!--android:inputType="textPersonName"-->
+                <!--android:text="Commercial Services of Fenti Rasu "-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="@color/common_google_signin_btn_text_dark_focused"-->
+
+                <!--android:paddingTop="50dp"-->
+                <!--android:textSize="20dp"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/Zone4comm_img"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="300dp"-->
+                <!--app:srcCompat="@drawable/zone_4_commercial"-->
+                <!--android:layout_below="@+id/Zone_4_Title_10"/>-->
+
+
+            <!--&lt;!&ndash;Infrastructures of Fenti Rasu &ndash;&gt;-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/Zone_4_Title_11"-->
+                <!--style="@style/AlertDialog.AppCompat.Light"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/Zone4comm_img"-->
+                <!--android:layout_weight="1"-->
+                <!--android:ems="10"-->
+                <!--android:enabled="false"-->
+                <!--android:inputType="textPersonName"-->
+                <!--android:text="Public Services of Fenti Rasu "-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="@color/common_google_signin_btn_text_dark_focused"-->
+
+                <!--android:paddingTop="50dp"-->
+                <!--android:textSize="20dp"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/Zone_4infrustructure_img"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="300dp"-->
+                <!--app:srcCompat="@drawable/zone_4_infrustructure"-->
+                <!--android:layout_below="@+id/Zone_4_Title_11"/>-->
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
