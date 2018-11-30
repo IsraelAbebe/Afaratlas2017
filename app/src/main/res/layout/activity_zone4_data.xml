@@ -47,11 +47,11 @@
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 />
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone4educational_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_edu"
+                app:srcCompat="@drawable/zone_4_education"
                 android:layout_below="@+id/Zone_4_Title_1"/>
 
             <TextView
@@ -71,11 +71,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone4helth_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_anim"
+                app:srcCompat="@drawable/zone_4_animal"
                 android:layout_below="@+id/Zone_4_Title_2"/>
 
             <TextView
@@ -95,11 +95,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone4helthfacilities_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_helth"
+                app:srcCompat="@drawable/zone_4_helth"
                 android:layout_below="@+id/Zone_4_Title_3"/>
 
 
@@ -121,11 +121,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone4riligious_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_religion"
+                app:srcCompat="@drawable/zone_4_religion"
                 android:layout_below="@+id/Zone_4_Title_4"/>
 
             <TextView
@@ -145,11 +145,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone4water_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_water"
+                app:srcCompat="@drawable/zone_4_water"
                 android:layout_below="@+id/Zone_4_Title_5"/>
 
             <TextView
@@ -169,11 +169,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone4village_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_villages"
+                app:srcCompat="@drawable/zone_4_villages"
                 android:layout_below="@+id/Zone_4_Title_6"/>
 
 
@@ -194,11 +194,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone4urban_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_urban"
+                app:srcCompat="@drawable/zone_4_urban"
                 android:layout_below="@+id/Zone_4_Title_7"/>
 
             <!--Meteorological Station in Fenti Rasu -->
@@ -220,11 +220,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone4metrology_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_metrology"
+                app:srcCompat="@drawable/zone_4_metrology"
                 android:layout_below="@+id/Zone_4_Title_8"/>
 
             <!--Public Services of Fenti Rasu -->
@@ -247,67 +247,67 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone4pub_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_pub"
+                app:srcCompat="@drawable/zone_4_public"
                 android:layout_below="@+id/Zone_4_Title_9"/>
 
 
             <!--Commercial Services of Fenti Rasu -->
 
-            <TextView
-                android:id="@+id/Zone_4_Title_10"
-                style="@style/AlertDialog.AppCompat.Light"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/Zone4pub_img"
-                android:layout_weight="1"
-                android:ems="10"
-                android:enabled="false"
-                android:inputType="textPersonName"
-                android:text="Commercial Services of Fenti Rasu "
-                android:textAlignment="center"
-                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            <!--<TextView-->
+                <!--android:id="@+id/Zone_4_Title_10"-->
+                <!--style="@style/AlertDialog.AppCompat.Light"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/Zone4pub_img"-->
+                <!--android:layout_weight="1"-->
+                <!--android:ems="10"-->
+                <!--android:enabled="false"-->
+                <!--android:inputType="textPersonName"-->
+                <!--android:text="Commercial Services of Fenti Rasu "-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="@color/common_google_signin_btn_text_dark_focused"-->
 
-                android:paddingTop="50dp"
-                android:textSize="20dp"/>
+                <!--android:paddingTop="50dp"-->
+                <!--android:textSize="20dp"/>-->
 
-            <ImageView
-                android:id="@+id/Zone4comm_img"
-                android:layout_width="wrap_content"
-                android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_comm"
-                android:layout_below="@+id/Zone_4_Title_10"/>
-
-
-            <!--Infrastructures of Fenti Rasu -->
+            <!--<ImageView-->
+                <!--android:id="@+id/Zone4comm_img"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="300dp"-->
+                <!--app:srcCompat="@drawable/zone_4_commercial"-->
+                <!--android:layout_below="@+id/Zone_4_Title_10"/>-->
 
 
-            <TextView
-                android:id="@+id/Zone_4_Title_11"
-                style="@style/AlertDialog.AppCompat.Light"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/Zone4comm_img"
-                android:layout_weight="1"
-                android:ems="10"
-                android:enabled="false"
-                android:inputType="textPersonName"
-                android:text="Public Services of Fenti Rasu "
-                android:textAlignment="center"
-                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            <!--&lt;!&ndash;Infrastructures of Fenti Rasu &ndash;&gt;-->
 
-                android:paddingTop="50dp"
-                android:textSize="20dp"/>
 
-            <ImageView
-                android:id="@+id/Zone_4infrustructure_img"
-                android:layout_width="wrap_content"
-                android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_infrustructure"
-                android:layout_below="@+id/Zone_4_Title_11"/>
+            <!--<TextView-->
+                <!--android:id="@+id/Zone_4_Title_11"-->
+                <!--style="@style/AlertDialog.AppCompat.Light"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/Zone4comm_img"-->
+                <!--android:layout_weight="1"-->
+                <!--android:ems="10"-->
+                <!--android:enabled="false"-->
+                <!--android:inputType="textPersonName"-->
+                <!--android:text="Public Services of Fenti Rasu "-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="@color/common_google_signin_btn_text_dark_focused"-->
+
+                <!--android:paddingTop="50dp"-->
+                <!--android:textSize="20dp"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/Zone_4infrustructure_img"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="300dp"-->
+                <!--app:srcCompat="@drawable/zone_4_infrustructure"-->
+                <!--android:layout_below="@+id/Zone_4_Title_11"/>-->
 
 
         </RelativeLayout>

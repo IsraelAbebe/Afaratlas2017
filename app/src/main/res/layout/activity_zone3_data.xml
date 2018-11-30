@@ -47,11 +47,11 @@
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 />
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone3educational_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_edu"
+                app:srcCompat="@drawable/zone_3_education"
                 android:layout_below="@+id/Zone_3_Title_1"/>
 
             <TextView
@@ -71,11 +71,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone3helth_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_anim"
+                app:srcCompat="@drawable/zone_3_animal"
                 android:layout_below="@+id/Zone_3_Title_2"/>
 
             <TextView
@@ -95,11 +95,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone3helthfacilities_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_helth"
+                app:srcCompat="@drawable/zone_3_helth"
                 android:layout_below="@+id/Zone_3_Title_3"/>
 
 
@@ -121,11 +121,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone3riligious_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_religion"
+                app:srcCompat="@drawable/zone_3_religion"
                 android:layout_below="@+id/Zone_3_Title_4"/>
 
             <TextView
@@ -145,11 +145,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone3water_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_water"
+                app:srcCompat="@drawable/zone_3_water"
                 android:layout_below="@+id/Zone_3_Title_5"/>
 
             <TextView
@@ -169,11 +169,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone3village_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_villages"
+                app:srcCompat="@drawable/zone_3_villages"
                 android:layout_below="@+id/Zone_3_Title_6"/>
 
 
@@ -194,11 +194,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone3urban_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_urban"
+                app:srcCompat="@drawable/zone_3_urban"
                 android:layout_below="@+id/Zone_3_Title_7"/>
 
             <!--Meteorological Station in Gabi Rasu-->
@@ -220,11 +220,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone3metrology_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_metrology"
+                app:srcCompat="@drawable/zone_3_metrology"
                 android:layout_below="@+id/Zone_3_Title_8"/>
 
             <!--Public Services of Gabi Rasu-->
@@ -247,11 +247,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone3pub_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_pub"
+                app:srcCompat="@drawable/zone_3_public"
                 android:layout_below="@+id/Zone_3_Title_9"/>
 
 
@@ -274,11 +274,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone3comm_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_comm"
+                app:srcCompat="@drawable/zone_3_commercial"
                 android:layout_below="@+id/Zone_3_Title_10"/>
 
 
@@ -302,11 +302,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone2infrustructure_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_infrustructure"
+                app:srcCompat="@drawable/zone_3_infrustructure"
                 android:layout_below="@+id/Zone_3_Title_11"/>
 
 

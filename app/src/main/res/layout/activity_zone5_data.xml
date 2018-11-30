@@ -47,11 +47,11 @@
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 />
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone5educational_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_edu"
+                app:srcCompat="@drawable/zone_5_education"
                 android:layout_below="@+id/Zone_5_Title_1"/>
 
             <TextView
@@ -71,11 +71,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone5helth_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_anim"
+                app:srcCompat="@drawable/zone_5_animal"
                 android:layout_below="@+id/Zone_5_Title_2"/>
 
             <TextView
@@ -95,11 +95,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone5helthfacilities_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_helth"
+                app:srcCompat="@drawable/zone_5_helth"
                 android:layout_below="@+id/Zone_5_Title_3"/>
 
 
@@ -121,11 +121,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone5riligious_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_religion"
+                app:srcCompat="@drawable/zone_5_religion"
                 android:layout_below="@+id/Zone_5_Title_4"/>
 
             <TextView
@@ -145,11 +145,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone5water_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_water"
+                app:srcCompat="@drawable/zone_5_water"
                 android:layout_below="@+id/Zone_5_Title_5"/>
 
             <TextView
@@ -169,11 +169,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone5village_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_villages"
+                app:srcCompat="@drawable/zone_5_villages"
                 android:layout_below="@+id/Zone_5_Title_6"/>
 
 
@@ -194,11 +194,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone5urban_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_urban"
+                app:srcCompat="@drawable/zone_5_urban"
                 android:layout_below="@+id/Zone_5_Title_7"/>
 
             <!--Meteorological Station in Hari Rasu -->
@@ -220,11 +220,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone5metrology_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_metrology"
+                app:srcCompat="@drawable/zone_5_metrology"
                 android:layout_below="@+id/Zone_5_Title_8"/>
 
             <!--Public Services of Hari Rasu -->
@@ -247,11 +247,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone5pub_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_pub"
+                app:srcCompat="@drawable/zone_5_public"
                 android:layout_below="@+id/Zone_5_Title_9"/>
 
 
@@ -274,40 +274,40 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone5comm_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_comm"
+                app:srcCompat="@drawable/zone_5_commercial"
                 android:layout_below="@+id/Zone_5_Title_10"/>
 
 
             <!--Infrastructures of Hari Rasu -->
 
 
-            <TextView
-                android:id="@+id/Zone_5_Title_11"
-                style="@style/AlertDialog.AppCompat.Light"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/Zone5comm_img"
-                android:layout_weight="1"
-                android:ems="10"
-                android:enabled="false"
-                android:inputType="textPersonName"
-                android:text="Public Services of Hari Rasu "
-                android:textAlignment="center"
-                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            <!--<TextView-->
+                <!--android:id="@+id/Zone_5_Title_11"-->
+                <!--style="@style/AlertDialog.AppCompat.Light"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/Zone5comm_img"-->
+                <!--android:layout_weight="1"-->
+                <!--android:ems="10"-->
+                <!--android:enabled="false"-->
+                <!--android:inputType="textPersonName"-->
+                <!--android:text="Public Services of Hari Rasu "-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="@color/common_google_signin_btn_text_dark_focused"-->
 
-                android:paddingTop="50dp"
-                android:textSize="20dp"/>
+                <!--android:paddingTop="50dp"-->
+                <!--android:textSize="20dp"/>-->
 
-            <ImageView
-                android:id="@+id/Zone_5infrustructure_img"
-                android:layout_width="wrap_content"
-                android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_infrustructure"
-                android:layout_below="@+id/Zone_5_Title_11"/>
+            <!--<com.github.chrisbanes.photoview.PhotoView-->
+                <!--android:id="@+id/Zone_5infrustructure_img"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="300dp"-->
+                <!--app:srcCompat="@drawable/zone_5_infrustructure"-->
+                <!--android:layout_below="@+id/Zone_5_Title_11"/>-->
 
 
         </RelativeLayout>

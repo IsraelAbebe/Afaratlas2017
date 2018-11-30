@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.gmail.se.israel.abebe.AfarInfo;
 import com.gmail.se.israel.abebe.Zone1_data;
 import com.gmail.se.israel.abebe.Zone2_data;
 import com.gmail.se.israel.abebe.Zone3_data;
@@ -136,7 +137,10 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(getApplicationContext(), "Gallery Clicked", Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_manage) {
             Toast.makeText(getApplicationContext(), "Tools Clicked", Toast.LENGTH_LONG).show();
-        } else if (id == R.id.full_map) {
+        }else if (id == R.id.AboutAfar) {
+            Intent i = getZoneIntent("AfarInfo");
+            startActivity(i);
+        }else if (id == R.id.full_map) {
             ZOOM_TO_1 = 0;
             onMapReady(mMap);
         } else if (id == R.id.zone_one) {
@@ -273,8 +277,9 @@ public class MainActivity extends AppCompatActivity
             i = new Intent(this, Zone4_data.class);
         } else if (name.equals("Zone5")) {
             i = new Intent(this, Zone5_data.class);
+        }else if (name.equals("AfarInfo")) {
+            i = new Intent(this, AfarInfo.class);
         }
-
         return i ;
     }
 }

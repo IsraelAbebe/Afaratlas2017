@@ -47,7 +47,8 @@
         <activity android:name="com.gmail.se.israel.abebe.Zone2_data" />
         <activity android:name="com.gmail.se.israel.abebe.Zone3_data" />
         <activity android:name="com.gmail.se.israel.abebe.Zone4_data" />
-        <activity android:name="com.gmail.se.israel.abebe.Zone5_data"></activity>
+        <activity android:name="com.gmail.se.israel.abebe.Zone5_data" />
+        <activity android:name="com.gmail.se.israel.abebe.AfarInfo"></activity>
     </application>
 
 </manifest>

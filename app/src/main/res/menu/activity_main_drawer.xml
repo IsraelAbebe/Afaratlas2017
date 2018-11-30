@@ -27,6 +27,10 @@
                     android:id="@+id/full_map"
                     android:title="Full Map" />
                 <item
+                    android:id="@+id/AboutAfar"
+                    android:title="About Afar" />
+
+                <item
                     android:id="@+id/zone_one"
                     android:title="Zone 1" />
 

@@ -47,11 +47,11 @@
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 />
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone2educational_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_edu"
+                app:srcCompat="@drawable/zone_2_education"
                 android:layout_below="@+id/Zone_2_Title_1"/>
 
             <TextView
@@ -71,11 +71,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone2helth_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_anim"
+                app:srcCompat="@drawable/zone_2_animal"
                 android:layout_below="@+id/Zone_2_Title_2"/>
 
             <TextView
@@ -95,11 +95,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone2helthfacilities_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_helth"
+                app:srcCompat="@drawable/zone_2_helth"
                 android:layout_below="@+id/Zone_2_Title_3"/>
 
 
@@ -121,11 +121,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone2riligious_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_religion"
+                app:srcCompat="@drawable/zone_2_religion"
                 android:layout_below="@+id/Zone_2_Title_4"/>
 
             <TextView
@@ -145,11 +145,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone2water_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_water"
+                app:srcCompat="@drawable/zone_2_water"
                 android:layout_below="@+id/Zone_2_Title_5"/>
 
             <TextView
@@ -169,7 +169,7 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone2village_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
@@ -194,7 +194,7 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone2urban_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
@@ -220,7 +220,7 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone2metrology_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
@@ -247,11 +247,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone2pub_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_pub"
+                app:srcCompat="@drawable/zone_1_public"
                 android:layout_below="@+id/Zone_2_Title_9"/>
 
 
@@ -274,11 +274,11 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone2comm_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
-                app:srcCompat="@drawable/zone_1_comm"
+                app:srcCompat="@drawable/zone_1_commercial"
                 android:layout_below="@+id/Zone_2_Title_10"/>
 
 
@@ -302,7 +302,7 @@
                 android:paddingTop="50dp"
                 android:textSize="20dp"/>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone2infrustructure_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
