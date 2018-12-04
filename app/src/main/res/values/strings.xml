@@ -9,5 +9,40 @@
     <string name="title_activity_maps">Map</string>
 
     <string name="afar_text_1"></string>
+    <string name="contact_info">+251-911-289475\n +251-966-105455\n +251-913-235881 \n\n\n  1and0consultancy@gmail.com \n Logia Town
+        \n Semera-Logia City Administration\n\nAfar,Ethiopia</string>
+
+
+    <string name="zone1_disc">Awusi rasu constituents total of eight wereda namely,
+        Ade’are, Millei, Chifra, Dubti, Assayta, Afambo, Elide’are, and Kory. The zone shares 280.22Km long international boundary
+        with Eritrea and Djibouti Republic. Furthermore, the zone shares 154.32Km long regional boundary with Amhara NRS.
+        The northern part of this zone shares zonal boundary with Kilbeti Rasu and the southern part of this zone shares zonal
+        boundary with Gabi Rasu and Hari Rasu. A total of 17 towns located in this zone. Including, Samara-logia city administration,
+        which is the capital city of the region. The zone covers 34,871Km2 of area, which makes it the largest zone of the region.
+        The zone has a total population of 410,790 of whom 224,656 are men and 186,134 women (CSA, 2007).</string>
+
+    <string name="zone2_disc">Kilbati rasu constituents total of eight wereda namely, Abala, Erebti, Koneba, Megale, Dalol, Afdera, Bidu, and Berhale.
+        This zone encompasses various tourist attraction places. Specially, for geo-tourism. Both the highest and the lowest elevation of the region are found in this zone.
+        The zone shares 328Km long international boundary with Eritrea and Djibouti Republic. In addition, the zone shares 321Km long regional boundary with Tigray NRS.
+        The administrative capital of this zone is Abala town. The zone covers 31,151Km2 of area, which makes it the largest zone of the region.
+        The zone has a total population of 350,111of whom 195,404 are men and 154,707 women (CSA, 2007). </string>
+
+    <string name="zone3_disc">Gabi rasu constituents total of six wereda namely, Gewane, Gelealo, Amibara, Dulecha, Argoba, and Awash Fentale weredas.
+        The zone shares 471Km long regional boundary Oromiya and Sumali NRS. The northern part of this zone shares zonal boundary with Awusi Rasu.
+        In addition, the western part of the zone shares zonal boundary with Fanti Rasu. The zone covers 16,381Km2 of area. Furthermore, based on areal coverage,
+        this zone is 3rd largest zone in the region. Moreover, this zone is well known for large scale modern irrigation schemes owned by different organization.
+        The zone has a total population of 198,751 of whom 108,995 are men and 89,756 women (CSA, 2007). </string>
+
+    <string name="zone4_disc">Fanti rasu constituents total of five administrative weredas namely, Gulina, Ewa, Awura, Yalo, and Teru weredas.
+        The zone shares 108.5Km long regional boundary with both Amhara and Tigray NRS. The northern part of this zone shares zonal boundary with Kilbeti Rasu.
+        In addition, the eastern part of the zone shares zonal boundary with Awusi Rasu and the southern part of the zone share boundary with Hari rasu zonal
+        administration boundary. The zone covers an area of 11,268Km2.
+        The zone has a total population of 246,822 of whom 140,741 are men and 106,081 women (CSA, 2007).</string>
+
+    <string name="zone5_disc">Hari rasu constituents total of five administrative weredas namely, Telalak, Dewe, Dalifage, Semiroby, and Hadele’ela weredas.
+        The zone shares 224.66Km long regional boundary with both Amhara NRS. The northern part of this zone shares zonal boundary with Awusi Rasu.
+        The zone covers an area of 5,976Km2. Based on areal coverage, this zone has the least spatial extent in the region.
+        The zone has a total population of 183,799 of whom 105,321 are men and 78,478 women (CSA, 2007).</string>
+
 
 </resources>

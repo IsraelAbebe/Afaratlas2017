@@ -6,20 +6,49 @@
     android:layout_height="match_parent"
     tools:context="com.example.icog.mapsdemo.Contact">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Company Name"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/logo_one"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat = "@drawable/oneandzero"
+        android:paddingTop="30dp"
+        />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:id="@+id/oneandtwoTitle"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Company Discription"
-        android:layout_marginTop="67dp"
-        android:layout_below="@+id/textView3"
-        android:layout_alignStart="@+id/textView3" />
+        android:layout_below="@id/logo_one"
+        android:layout_weight="1"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="One and Zero Consultancy"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:paddingTop="25dp"
+        android:paddingBottom="30dp"
+        android:textSize="25dp"
+       />
+
+
+    <TextView
+        android:id="@+id/phone"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/oneandtwoTitle"
+        android:layout_weight="1"
+        android:ems="10"
+        android:enabled="false"
+        android:text="@string/contact_info"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:paddingTop="25dp"
+        android:textSize="15dp"
+        />
+
+
+
 </RelativeLayout>

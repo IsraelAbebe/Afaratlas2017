@@ -132,14 +132,15 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_gallery) {
             Intent i = new Intent(this, galleryShow.class);
             startActivity(i);
-            Toast.makeText(getApplicationContext(), "Gallery Clicked", Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_slideshow) {
             Intent i = new Intent(this, Contact.class);
             startActivity(i);
-            Toast.makeText(getApplicationContext(), "Gallery Clicked", Toast.LENGTH_LONG).show();
-        } else if (id == R.id.nav_manage) {
-            Toast.makeText(getApplicationContext(), "Tools Clicked", Toast.LENGTH_LONG).show();
-        }else if (id == R.id.AboutAfar) {
+//            Toast.makeText(getApplicationContext(), "Gallery Clicked", Toast.LENGTH_LONG).show();
+        }
+//        else if (id == R.id.nav_manage) {
+//            Toast.makeText(getApplicationContext(), "Tools Clicked", Toast.LENGTH_LONG).show();
+//        }
+        else if (id == R.id.AboutAfar) {
             Intent i = getZoneIntent("AfarInfo");
             startActivity(i);
         }else if (id == R.id.full_map) {
@@ -162,7 +163,6 @@ public class MainActivity extends AppCompatActivity
             onMapReady(mMap);
 
         }
-
 
 //        else if (id == R.id.nav_manage) {
 //            Toast.makeText(getApplicationContext(), "Tools Clicked", Toast.LENGTH_LONG).show();

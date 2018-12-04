@@ -47,12 +47,29 @@
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 />
 
+            <TextView
+                android:id="@+id/Zone_5_disc_1"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Zone_5_Title_1"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textSize="15dp"
+                android:enabled="false"
+                android:text="@string/zone5_disc"
+                android:maxLines="9"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+
             <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/Zone5educational_img"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
                 app:srcCompat="@drawable/zone_5_education"
-                android:layout_below="@+id/Zone_5_Title_1"/>
+                android:layout_below="@+id/Zone_5_disc_1"/>
 
             <TextView
                 android:id="@+id/Zone_5_Title_2"
