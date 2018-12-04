@@ -2,8 +2,8 @@ package com.example.icog.mapsdemo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Debug;
 import android.support.design.widget.FloatingActionButton;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity
                     maptype = 1;
                 }
                 onMapReady(mMap);
+
 //                Snackbar.make(view, "Map View Changed", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
             }
@@ -185,14 +186,32 @@ public class MainActivity extends AppCompatActivity
         iconFactory.setColor(R.color.red_Color);
         iconFactory.setTextAppearance(R.style.iconGenText);
 
+
+
+        mMap.clear();
+
+        KmlLayer ethiopiaLayer = null;
+        KmlLayer zone1Layer = null;
+        KmlLayer zone2Layer = null;
+        KmlLayer zone3Layer = null;
+        KmlLayer zone4Layer = null;
+        KmlLayer zone5Layer = null;
         try {
-            KmlLayer ethiopiaLayer = new KmlLayer(mMap, R.raw.afaralex, getApplicationContext());
-            ethiopiaLayer.addLayerToMap();
+            ethiopiaLayer = new KmlLayer(mMap, R.raw.afarrigional, getApplicationContext());
+            zone1Layer = new KmlLayer(mMap, R.raw.zone1, getApplicationContext());
+            zone2Layer = new KmlLayer(mMap, R.raw.zone2, getApplicationContext());
+            zone3Layer = new KmlLayer(mMap, R.raw.zone3, getApplicationContext());
+            zone4Layer = new KmlLayer(mMap, R.raw.zone4, getApplicationContext());
+            zone5Layer = new KmlLayer(mMap, R.raw.zone5, getApplicationContext());
+
         } catch (XmlPullParserException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
+
 
         LatLng zone1 = new LatLng(11.776444, 41.275195);
         LatLng zone2 = new LatLng(13.747022, 40.296543);
@@ -201,22 +220,113 @@ public class MainActivity extends AppCompatActivity
         LatLng zone5 = new LatLng(10.514944, 40.276481);
 
 
-        MarkerOptions zone1marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 1")))
-                .position(zone1).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
-        MarkerOptions zone2marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 2")))
-                .position(zone2).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
-        MarkerOptions zone3marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 3")))
-                .position(zone3).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
-        MarkerOptions zone4marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 4")))
-                .position(Zone4).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
-        MarkerOptions zone5marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 5")))
-                .position(zone5).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
 
-        mMap.addMarker(zone1marker).setTitle("Zone1");
-        mMap.addMarker(zone2marker).setTitle("Zone2");
-        mMap.addMarker(zone3marker).setTitle("Zone3");
-        mMap.addMarker(zone4marker).setTitle("Zone4");
-        mMap.addMarker(zone5marker).setTitle("Zone5");
+        if(ZOOM_TO_1 == 0) {
+
+            try {
+                ethiopiaLayer.addLayerToMap();
+            } catch (XmlPullParserException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            MarkerOptions zone1marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 1")))
+                    .position(zone1).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone2marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 2")))
+                    .position(zone2).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone3marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 3")))
+                    .position(zone3).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone4marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 4")))
+                    .position(Zone4).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone5marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 5")))
+                    .position(zone5).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+
+
+
+            mMap.addMarker(zone1marker).setTitle("Zone1");
+            mMap.addMarker(zone2marker).setTitle("Zone2");
+            mMap.addMarker(zone3marker).setTitle("Zone3");
+            mMap.addMarker(zone4marker).setTitle("Zone4");
+            mMap.addMarker(zone5marker).setTitle("Zone5");
+
+        }else if (ZOOM_TO_1 == 1){
+            try {
+                 zone1Layer.addLayerToMap();
+            } catch (XmlPullParserException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            MarkerOptions zone1marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 1")))
+                    .position(zone1).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            mMap.addMarker(zone1marker).setTitle("Zone1");
+
+        }else if (ZOOM_TO_1 == 2){
+            try {
+                zone2Layer.addLayerToMap();
+            } catch (XmlPullParserException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            MarkerOptions zone2marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 2")))
+                    .position(zone2).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            mMap.addMarker(zone2marker).setTitle("Zone2");
+
+
+        }else if (ZOOM_TO_1 == 3){
+            try {
+                zone3Layer.addLayerToMap();
+
+            } catch (XmlPullParserException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            MarkerOptions zone3marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 3")))
+                    .position(zone3).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            mMap.addMarker(zone3marker).setTitle("Zone3");
+
+
+        }else if (ZOOM_TO_1 == 4){
+            try {
+                 zone4Layer.addLayerToMap();
+
+            } catch (XmlPullParserException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            MarkerOptions zone4marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 4")))
+                    .position(Zone4).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            mMap.addMarker(zone4marker).setTitle("Zone4");
+
+
+        }else if (ZOOM_TO_1 == 5){
+            try {
+                 zone5Layer.addLayerToMap();
+
+            } catch (XmlPullParserException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            MarkerOptions zone5marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 5")))
+                    .position(zone5).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            mMap.addMarker(zone5marker).setTitle("Zone5");
+
+
+        }
+
+
+
+
+
 
 
         mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(new LatLng(8.50, 38.90), new LatLng(15.50, 42)));
@@ -315,4 +425,6 @@ public class MainActivity extends AppCompatActivity
         }
         return i ;
     }
+
+
 }
