@@ -26,33 +26,19 @@
                 android:enabled="false"
                 android:textSize="30dp"
                 android:inputType="textPersonName"
-                android:text="Gabi Rasu "
+                android:text="Gabi Rasu (Zone 3)"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"/>
 
-            <TextView
-                android:id="@+id/Zone_3_Title_1"
-                style="@style/AlertDialog.AppCompat.Light"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/Zone_3_Title_main"
-                android:layout_weight="1"
-                android:ems="10"
-                android:textSize="20dp"
-                android:enabled="false"
-                android:inputType="textPersonName"
-                android:text="Gabi Rasu Educational Facilities"
-                android:textAlignment="center"
-                android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                />
+
 
             <TextView
                 android:id="@+id/Zone_3_disc_1"
                 style="@style/AlertDialog.AppCompat.Light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/Zone_3_Title_1"
+                android:layout_below="@+id/Zone_3_Title_main"
                 android:layout_weight="1"
                 android:ems="10"
                 android:textSize="15dp"
@@ -62,6 +48,22 @@
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/Zone_3_Title_1"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Zone_3_disc_1"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textSize="20dp"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="Gabi Rasu (Zone 3) Educational Facilities"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 />
 
             <com.github.chrisbanes.photoview.PhotoView
