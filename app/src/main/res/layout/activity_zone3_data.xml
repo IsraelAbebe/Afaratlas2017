@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
                 app:srcCompat="@drawable/zone_3_education"
-                android:layout_below="@+id/Zone_3_disc_1"/>
+                android:layout_below="@+id/Zone_3_Title_1"/>
 
             <TextView
                 android:id="@+id/Zone_3_Title_2"

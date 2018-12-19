@@ -8,8 +8,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -50,7 +49,9 @@
         <activity android:name="com.gmail.se.israel.abebe.Zone3_data" />
         <activity android:name="com.gmail.se.israel.abebe.Zone4_data" />
         <activity android:name="com.gmail.se.israel.abebe.Zone5_data" />
-        <activity android:name="com.gmail.se.israel.abebe.AfarInfo"></activity>
+        <activity android:name="com.gmail.se.israel.abebe.AfarInfo" />
+        <activity android:name="com.gmail.se.israel.abebe.ourService" />
+        <activity android:name="com.gmail.se.israel.abebe.aboutus"></activity>
     </application>
 
 </manifest>

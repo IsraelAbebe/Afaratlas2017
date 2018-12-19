@@ -21,6 +21,8 @@ import com.gmail.se.israel.abebe.Zone2_data;
 import com.gmail.se.israel.abebe.Zone3_data;
 import com.gmail.se.israel.abebe.Zone4_data;
 import com.gmail.se.israel.abebe.Zone5_data;
+import com.gmail.se.israel.abebe.aboutus;
+import com.gmail.se.israel.abebe.ourService;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -28,6 +30,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.maps.android.data.kml.KmlLayer;
@@ -115,6 +118,8 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent i = getZoneIntent("ourService");
+            startActivity(i);
             return true;
         }
 
@@ -135,11 +140,11 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
             Intent i = new Intent(this, Contact.class);
             startActivity(i);
-//            Toast.makeText(getApplicationContext(), "Gallery Clicked", Toast.LENGTH_LONG).show();
         }
-//        else if (id == R.id.nav_manage) {
-//            Toast.makeText(getApplicationContext(), "Tools Clicked", Toast.LENGTH_LONG).show();
-//        }
+        else if (id == R.id.nav_manage) {
+            Intent i = getZoneIntent("aboutus");
+            startActivity(i);
+        }
         else if (id == R.id.AboutAfar) {
             Intent i = getZoneIntent("AfarInfo");
             startActivity(i);
@@ -163,15 +168,6 @@ public class MainActivity extends AppCompatActivity
             onMapReady(mMap);
 
         }
-
-//        else if (id == R.id.nav_manage) {
-//            Toast.makeText(getApplicationContext(), "Tools Clicked", Toast.LENGTH_LONG).show();
-//        } else if (id == R.id.nav_share) {
-//            Toast.makeText(getApplicationContext(), "Share Clicked", Toast.LENGTH_LONG).show();
-//        } else if (id == R.id.about) {
-//            Toast.makeText(getApplicationContext(), "About Clicked", Toast.LENGTH_LONG).show();
-//        }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -179,7 +175,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-//        final boolean success = googleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json));
+        final boolean success = googleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json));
 
         mMap = googleMap;
         IconGenerator iconFactory = new IconGenerator(this);
@@ -378,7 +374,6 @@ public class MainActivity extends AppCompatActivity
         }
 
 
-//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.815915, 40.824674), 6.0f));
 
 
         mMap.setMinZoomPreference(MIN_ZOOM);
@@ -391,11 +386,9 @@ public class MainActivity extends AppCompatActivity
             mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         }
 
-//        final Intent i = new Intent(this, Zone1_data.class);
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-//                Debug.Log("CLICKED "+marker.getTitle());
                 Intent i = getZoneIntent(marker.getTitle());
                 startActivity(i);
                 return false;
@@ -422,6 +415,10 @@ public class MainActivity extends AppCompatActivity
             i = new Intent(this, Zone5_data.class);
         }else if (name.equals("AfarInfo")) {
             i = new Intent(this, AfarInfo.class);
+        }else if (name.equals("ourService")) {
+            i = new Intent(this, ourService.class);
+        }else if (name.equals("aboutus")) {
+            i = new Intent(this, aboutus.class);
         }
         return i ;
     }

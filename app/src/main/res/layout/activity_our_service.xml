@@ -4,11 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.icog.mapsdemo.Contact">
+    tools:context="com.gmail.se.israel.abebe.ourService">
 
-    <WebView
-        android:id="@+id/contact"
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <WebView
+            android:id="@+id/ourservice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </ScrollView>
 </RelativeLayout>

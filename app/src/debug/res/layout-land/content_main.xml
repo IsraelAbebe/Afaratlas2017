@@ -11,8 +11,8 @@
     <include
         layout="@layout/activity_maps"
         android:layout_width="576dp"
-        android:layout_height="289dp"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="10dp" />
+        android:layout_height="295dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
 
 </android.support.constraint.ConstraintLayout>

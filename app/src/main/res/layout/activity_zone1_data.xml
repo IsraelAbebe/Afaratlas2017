@@ -26,7 +26,7 @@
                 android:enabled="false"
                 android:textSize="30dp"
                 android:inputType="textPersonName"
-                android:text="Awsi Rasu "
+                android:text="Awsi Rasu (Zone 1)"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"/>
@@ -61,7 +61,7 @@
                 android:textSize="20dp"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="Awsi Rasu Educational Facilities"
+                android:text="Awsi Rasu (Zone 1) Educational Facilities"
                 android:textAlignment="center"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 />
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
                 app:srcCompat="@drawable/zone_1_education"
-                android:layout_below="@+id/Zone_1_disc_1"/>
+                android:layout_below="@+id/Zone_1_Title_1"/>
 
             <TextView
                 android:id="@+id/Zone_1_Title_2"
@@ -83,7 +83,7 @@
                 android:ems="10"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="Awsi Rasu Animal Health Facilities"
+                android:text="Awsi Rasu (Zone 1) Animal Health Facilities"
                 android:textAlignment="center"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:paddingTop="50dp"
@@ -106,7 +106,7 @@
                 android:ems="10"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="Awsi Rasu Health Facilities"
+                android:text="Awsi Rasu (Zone 1) Health Facilities"
                 android:textAlignment="center"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:paddingTop="50dp"
@@ -131,7 +131,7 @@
                 android:ems="10"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="Awsi Rasu Religious Institutions"
+                android:text="Awsi Rasu (Zone 1) Religious Institutions"
                 android:textAlignment="center"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:paddingTop="50dp"
@@ -154,7 +154,7 @@
                 android:ems="10"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="Awsi Rasu Water Schemes"
+                android:text="Awsi Rasu (Zone 1) Water Schemes"
                 android:textAlignment="center"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:paddingTop="50dp"
@@ -177,7 +177,7 @@
                 android:ems="10"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="Awsi Rasu Rural Villages"
+                android:text="Awsi Rasu (Zone 1) Rural Villages"
                 android:textAlignment="center"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:paddingTop="50dp"
@@ -201,7 +201,7 @@
                 android:ems="10"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="Urbans of Awsi Rasu"
+                android:text="Urbans of Awsi Rasu (Zone 1)"
                 android:textAlignment="center"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:paddingTop="50dp"
@@ -214,7 +214,7 @@
                 app:srcCompat="@drawable/zone_1_urban"
                 android:layout_below="@+id/Zone_1_Title_7"/>
 
-            <!--Meteorological Station in Awsi Rasu-->
+            <!--Meteorological Station in Awsi Rasu (Zone 1)-->
 
             <TextView
                 android:id="@+id/Zone_1_Title_8"
@@ -226,7 +226,7 @@
                 android:ems="10"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="Meteorological Station in Awsi Rasu"
+                android:text="Meteorological Station in Awsi Rasu (Zone 1)"
                 android:textAlignment="center"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:paddingTop="50dp"
@@ -239,7 +239,7 @@
                 app:srcCompat="@drawable/zone_1_metrology"
                 android:layout_below="@+id/Zone_1_Title_8"/>
 
-            <!--Public Services of Awsi Rasu-->
+            <!--Public Services of Awsi Rasu (Zone 1)-->
 
 
             <TextView
@@ -252,7 +252,7 @@
                 android:ems="10"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="Public Services of Awsi Rasu"
+                android:text="Public Services of Awsi Rasu (Zone 1)"
                 android:textAlignment="center"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:paddingTop="50dp"
@@ -266,7 +266,7 @@
                 android:layout_below="@+id/Zone_1_Title_9"/>
 
 
-            <!--Commercial Services of Awsi Rasu-->
+            <!--Commercial Services of Awsi Rasu (Zone 1)-->
 
             <TextView
                 android:id="@+id/Zone_1_Title_10"
@@ -278,7 +278,7 @@
                 android:ems="10"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="Commercial Services of Awsi Rasu"
+                android:text="Commercial Services of Awsi Rasu (Zone 1)"
                 android:textAlignment="center"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:paddingTop="50dp"
@@ -292,7 +292,7 @@
                 android:layout_below="@+id/Zone_1_Title_10"/>
 
 
-            <!--Infrastructures of Awsi Rasu-->
+            <!--Infrastructures of Awsi Rasu (Zone 1)-->
 
 
             <TextView
@@ -305,7 +305,7 @@
                 android:ems="10"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="Public Services of Awsi Rasu"
+                android:text="Public Services of Awsi Rasu (Zone 1)"
                 android:textAlignment="center"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:paddingTop="50dp"
