@@ -192,6 +192,12 @@ public class MainActivity extends AppCompatActivity
         KmlLayer zone3Layer = null;
         KmlLayer zone4Layer = null;
         KmlLayer zone5Layer = null;
+
+        KmlLayer zone1Layer_kml = null;
+        KmlLayer zone2Layer_kml = null;
+        KmlLayer zone3Layer_kml = null;
+        KmlLayer zone4Layer_kml = null;
+        KmlLayer zone5Layer_kml = null;
         try {
             ethiopiaLayer = new KmlLayer(mMap, R.raw.afarrigional, getApplicationContext());
             zone1Layer = new KmlLayer(mMap, R.raw.zone1, getApplicationContext());
@@ -199,6 +205,12 @@ public class MainActivity extends AppCompatActivity
             zone3Layer = new KmlLayer(mMap, R.raw.zone3, getApplicationContext());
             zone4Layer = new KmlLayer(mMap, R.raw.zone4, getApplicationContext());
             zone5Layer = new KmlLayer(mMap, R.raw.zone5, getApplicationContext());
+//
+//            zone1Layer_kml = new KmlLayer(mMap, R.raw.zone1_label, getApplicationContext());
+//            zone2Layer_kml = new KmlLayer(mMap, R.raw.zone2_label, getApplicationContext());
+//            zone3Layer_kml = new KmlLayer(mMap, R.raw.zone3_label, getApplicationContext());
+//            zone4Layer_kml = new KmlLayer(mMap, R.raw.zone4_label, getApplicationContext());
+//            zone5Layer_kml = new KmlLayer(mMap, R.raw.zone5_label, getApplicationContext());
 
         } catch (XmlPullParserException e) {
             e.printStackTrace();
@@ -208,7 +220,7 @@ public class MainActivity extends AppCompatActivity
 
 
 
-
+//         Zones
         LatLng zone1 = new LatLng(11.776444, 41.275195);
         LatLng zone2 = new LatLng(13.747022, 40.296543);
         LatLng zone3 = new LatLng(9.827293, 40.682615);
@@ -216,6 +228,58 @@ public class MainActivity extends AppCompatActivity
         LatLng zone5 = new LatLng(10.514944, 40.276481);
 
 
+//        Zone 1
+
+        LatLng zone_1_dubti = new LatLng(11.9,41.1);
+        LatLng zone_1_millei = new LatLng(11.3,41.0);
+        LatLng zone_1_kory = new LatLng(12.4,41.0);
+        LatLng zone_1_adeare = new LatLng(11.3,40.4);
+        LatLng zone_1_afambo = new LatLng(11.3,41.7);
+        LatLng zone_1_assayta = new LatLng(11.6,41.5);
+        LatLng zone_1_chifra = new LatLng(11.6,40.2);
+        LatLng zone_1_elideare= new LatLng(12.4,41.8);
+
+//        Zone 2
+
+
+        LatLng zone_2_Berhale = new LatLng(13.953583447,40.167210717);
+        LatLng zone_2_Megale = new LatLng(12.827951567,39.936991909);
+        LatLng zone_2_Erebti = new LatLng(13.140237836,40.165564474);
+        LatLng zone_2_Abala = new LatLng(13.364696696,39.861514037);
+        LatLng zone_2_Afdera = new LatLng(13.560927737,40.726855615);
+        LatLng zone_2_Bidu = new LatLng(13.024047812,41.342734546);
+        LatLng zone_2_Dalol = new LatLng(14.306313475,40.042640566);
+        LatLng zone_2_Koneba = new LatLng(14.003588149,39.873022024);
+
+
+// Zone 3
+
+
+        LatLng zone_3_Argoba = new LatLng(9.48943508100,39.86696271700);
+        LatLng zone_3_Amibara = new LatLng(9.46028567000,40.43227214600);
+        LatLng zone_3_AwashFentale = new LatLng(9.08785099500,40.02086441300);
+        LatLng zone_3_Gelaalo = new LatLng(10.12416629100,40.46829517700);
+        LatLng zone_3_Dulecha = new LatLng(9.48474269800,40.06019051600);
+        LatLng zone_3_Gewane = new LatLng(10.42121006100,40.76739858300);
+
+
+
+//        Zone 4
+
+        LatLng zone_4_Golina = new LatLng(12.18453484300,39.98186122800);
+        LatLng zone_4_Awura = new LatLng(12.04673689800,40.30947601300);
+        LatLng zone_4_Ewa = new LatLng(11.83418774300,40.16116388300);
+        LatLng zone_4_Teru = new LatLng(12.57191242400,40.45152626700);
+        LatLng zone_4_Yalo = new LatLng(12.42608372600,39.93334852100);
+
+
+//        Zone 5
+
+        LatLng zone_5_Dalifage = new LatLng(10.47341332900,40.46211204300);
+        LatLng zone_5_Dewe = new LatLng(10.73011141200,40.27697459700);
+        LatLng zone_5_Hadeleela = new LatLng(10.25705166800,40.24892822900);
+        LatLng zone_5_Semiroby = new LatLng(9.87016918900,40.14598393900);
+        LatLng zone_5_Telalak = new LatLng(10.97205401700,40.29248595500);
 
         if(ZOOM_TO_1 == 0) {
 
@@ -246,36 +310,103 @@ public class MainActivity extends AppCompatActivity
             mMap.addMarker(zone4marker).setTitle("Zone4");
             mMap.addMarker(zone5marker).setTitle("Zone5");
 
+
+
         }else if (ZOOM_TO_1 == 1){
             try {
                  zone1Layer.addLayerToMap();
+//                zone1Layer_kml.addLayerToMap();
             } catch (XmlPullParserException e) {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
             }
 
-            MarkerOptions zone1marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 1")))
-                    .position(zone1).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
-            mMap.addMarker(zone1marker).setTitle("Zone1");
+            MarkerOptions zone_1_adearemarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Ade`are")))
+                    .position(zone_1_adeare).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_1_afambomarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Afambo")))
+                    .position(zone_1_afambo).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_1_assaytamarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Assayta")))
+                    .position(zone_1_assayta).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_1_chiframarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Chifra")))
+                    .position(zone_1_chifra).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_1_dubtimarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Dubti")))
+                    .position(zone_1_dubti).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_1_elidearemarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Elide`are")))
+                    .position(zone_1_elideare).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_1_korymarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Kory")))
+                    .position(zone_1_kory).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_1_milleimarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Millei")))
+                    .position(zone_1_millei).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+
+
+
+
+            mMap.addMarker(zone_1_dubtimarker).setTitle("Dubti");
+            mMap.addMarker(zone_1_milleimarker).setTitle("Millei");
+            mMap.addMarker(zone_1_korymarker).setTitle("Kory");
+            mMap.addMarker(zone_1_adearemarker).setTitle("Ade`are");
+            mMap.addMarker(zone_1_afambomarker).setTitle("Afambo");
+            mMap.addMarker(zone_1_assaytamarker).setTitle("Assayta");
+            mMap.addMarker(zone_1_chiframarker).setTitle("Chifra");
+            mMap.addMarker(zone_1_elidearemarker).setTitle("Elide`are");
+
+
+//            MarkerOptions zone1marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 1")))
+//                    .position(zone1).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+//            mMap.addMarker(zone1marker).setTitle("Zone1");
 
         }else if (ZOOM_TO_1 == 2){
             try {
                 zone2Layer.addLayerToMap();
+//                zone2Layer_kml.addLayerToMap();
             } catch (XmlPullParserException e) {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
             }
 
-            MarkerOptions zone2marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 2")))
-                    .position(zone2).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
-            mMap.addMarker(zone2marker).setTitle("Zone2");
+            MarkerOptions zone_2_Berhalemarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Berhale")))
+                    .position(zone_2_Berhale).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_2_Megalemarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Megale")))
+                    .position(zone_2_Megale).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_2_Erebtimarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Erebti")))
+                    .position(zone_2_Erebti).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_2_Abalamarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Abala")))
+                    .position(zone_2_Abala).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_2_Afderamarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Afdera")))
+                    .position(zone_2_Afdera).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_2_Bidumarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Bidu")))
+                    .position(zone_2_Bidu).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_2_Dalolmarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Dalol")))
+                    .position(zone_2_Dalol).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_2_Konebamarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Koneba")))
+                    .position(zone_2_Koneba).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+
+
+
+
+            mMap.addMarker(zone_2_Berhalemarker).setTitle("Berhale");
+            mMap.addMarker(zone_2_Megalemarker).setTitle("Megale");
+            mMap.addMarker(zone_2_Erebtimarker).setTitle("Erebti");
+            mMap.addMarker(zone_2_Abalamarker).setTitle("Abala");
+            mMap.addMarker(zone_2_Afderamarker).setTitle("Afdera");
+            mMap.addMarker(zone_2_Bidumarker).setTitle("Bidu");
+            mMap.addMarker(zone_2_Dalolmarker).setTitle("Dalol");
+            mMap.addMarker(zone_2_Konebamarker).setTitle("Koneba");
+
+
+
+
+//            MarkerOptions zone2marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 2")))
+//                    .position(zone2).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+//            mMap.addMarker(zone2marker).setTitle("Zone2");
 
 
         }else if (ZOOM_TO_1 == 3){
             try {
                 zone3Layer.addLayerToMap();
+//                zone3Layer_kml.addLayerToMap();
 
             } catch (XmlPullParserException e) {
                 e.printStackTrace();
@@ -283,28 +414,79 @@ public class MainActivity extends AppCompatActivity
                 e.printStackTrace();
             }
 
-            MarkerOptions zone3marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 3")))
-                    .position(zone3).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
-            mMap.addMarker(zone3marker).setTitle("Zone3");
+
+            MarkerOptions zone_3_Argobamarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Argoba")))
+                    .position(zone_3_Argoba).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_3_Amibaramarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Amibara")))
+                    .position(zone_3_Amibara).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_3_AwashFentalemarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Awash Fentale")))
+                    .position(zone_3_AwashFentale).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_3_Gelaalomarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Gelaalo")))
+                    .position(zone_3_Gelaalo).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_3_Dulechamarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Dulecha")))
+                    .position(zone_3_Dulecha).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_3_Gewanemarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Gewane")))
+                    .position(zone_3_Gewane).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+
+
+
+
+            mMap.addMarker(zone_3_Argobamarker).setTitle("Berhale");
+            mMap.addMarker(zone_3_Amibaramarker).setTitle("Amibara");
+            mMap.addMarker(zone_3_AwashFentalemarker).setTitle("Awash Fentale");
+            mMap.addMarker(zone_3_Gelaalomarker).setTitle("Gelaalo");
+            mMap.addMarker(zone_3_Dulechamarker).setTitle("Dulecha");
+            mMap.addMarker(zone_3_Gewanemarker).setTitle("Gewane");
+
+
+//            MarkerOptions zone3marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 3")))
+//                    .position(zone3).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+//            mMap.addMarker(zone3marker).setTitle("Zone3");
 
 
         }else if (ZOOM_TO_1 == 4){
             try {
                  zone4Layer.addLayerToMap();
+//                zone3Layer_kml.addLayerToMap();
 
             } catch (XmlPullParserException e) {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            MarkerOptions zone4marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 4")))
-                    .position(Zone4).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
-            mMap.addMarker(zone4marker).setTitle("Zone4");
+
+
+
+            MarkerOptions zone_4_Golinamarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Golina")))
+                    .position(zone_4_Golina).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_4_Awuramarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Awura")))
+                    .position(zone_4_Awura).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_4_Ewamarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Ewa")))
+                    .position(zone_4_Ewa).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_4_Terumarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Teru")))
+                    .position(zone_4_Teru).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_4_Yalomarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Yalo")))
+                    .position(zone_4_Yalo).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+
+
+
+
+
+            mMap.addMarker(zone_4_Golinamarker).setTitle("Golina");
+            mMap.addMarker(zone_4_Awuramarker).setTitle("Awura");
+            mMap.addMarker(zone_4_Ewamarker).setTitle("Ewa");
+            mMap.addMarker(zone_4_Terumarker).setTitle("Teru");
+            mMap.addMarker(zone_4_Yalomarker).setTitle("Yalo");
+
+//            MarkerOptions zone4marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 4")))
+//                    .position(Zone4).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+//            mMap.addMarker(zone4marker).setTitle("Zone4");
 
 
         }else if (ZOOM_TO_1 == 5){
             try {
                  zone5Layer.addLayerToMap();
+//                zone5Layer_kml.addLayerToMap();
 
             } catch (XmlPullParserException e) {
                 e.printStackTrace();
@@ -312,9 +494,30 @@ public class MainActivity extends AppCompatActivity
                 e.printStackTrace();
             }
 
-            MarkerOptions zone5marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 5")))
-                    .position(zone5).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
-            mMap.addMarker(zone5marker).setTitle("Zone5");
+            MarkerOptions zone_5_Dalifagemarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Dalifage")))
+                    .position(zone_5_Dalifage).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_5_Dewemarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Dewe")))
+                    .position(zone_5_Dewe).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_5_Hadeleelamarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Hadele`ela")))
+                    .position(zone_5_Hadeleela).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_5_Semirobymarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Teru")))
+                    .position(zone_5_Semiroby).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+            MarkerOptions zone_5_Telalakmarker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Yalo")))
+                    .position(zone_5_Telalak).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+
+
+
+
+
+            mMap.addMarker(zone_5_Dalifagemarker).setTitle("Dalifage");
+            mMap.addMarker(zone_5_Dewemarker).setTitle("Dewe");
+            mMap.addMarker(zone_5_Hadeleelamarker).setTitle("Hadele`ela");
+            mMap.addMarker(zone_5_Semirobymarker).setTitle("Semiroby");
+            mMap.addMarker(zone_5_Telalakmarker).setTitle("Telalak");
+
+//            MarkerOptions zone5marker = new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon("Zone 5")))
+//                    .position(zone5).anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+//            mMap.addMarker(zone5marker).setTitle("Zone5");
 
 
         }

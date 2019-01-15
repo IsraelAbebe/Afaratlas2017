@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>zone5_label.kml</name>
+	<Style id="IconStyle00">
+		<IconStyle>
+			<scale>0.25</scale>
+			<Icon>
+				<href>layer5.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff000000</color>
+			<scale>0.916667</scale>
+		</LabelStyle>
+		<PolyStyle>
+			<color>ff000000</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>zone5_label.kml</name>
+		<open>1</open>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>Dalifage</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Dalifage</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>Zones</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Same_Block</td>
+
+<td>Dalifage</td>
+
+</tr>
+
+<tr>
+
+<td>Area_KM2</td>
+
+<td>954.607561</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Sex_Ratio</td>
+
+<td>1.400186</td>
+
+</tr>
+
+<tr>
+
+<td>Popun_Density</td>
+
+<td>48.755114</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Perimeter_KM</td>
+
+<td>179.976549</td>
+
+</tr>
+
+<tr>
+
+<td>Percent</td>
+
+<td>0.957994</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ORIG_FID</td>
+
+<td>1</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle00</styleUrl>
+			<Point>
+				<coordinates>40.46211204329665,10.47341332940006,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_00001">
+			<name>Dewe</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Dewe</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>Zones</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Same_Block</td>
+
+<td>Dewe</td>
+
+</tr>
+
+<tr>
+
+<td>Area_KM2</td>
+
+<td>784.690128</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Sex_Ratio</td>
+
+<td>1.344772</td>
+
+</tr>
+
+<tr>
+
+<td>Popun_Density</td>
+
+<td>66.441514</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Perimeter_KM</td>
+
+<td>165.418372</td>
+
+</tr>
+
+<tr>
+
+<td>Percent</td>
+
+<td>0.787473</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ORIG_FID</td>
+
+<td>2</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle00</styleUrl>
+			<Point>
+				<coordinates>40.27697459738883,10.73011141216213,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_00002">
+			<name>Hadele&apos;ela</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Hadele'ela</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>Zones</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Same_Block</td>
+
+<td>Hadele'ela</td>
+
+</tr>
+
+<tr>
+
+<td>Area_KM2</td>
+
+<td>1521.35774</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Sex_Ratio</td>
+
+<td>1.176394</td>
+
+</tr>
+
+<tr>
+
+<td>Popun_Density</td>
+
+<td>28.652695</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Perimeter_KM</td>
+
+<td>218.828813</td>
+
+</tr>
+
+<tr>
+
+<td>Percent</td>
+
+<td>1.526754</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ORIG_FID</td>
+
+<td>3</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle00</styleUrl>
+			<Point>
+				<coordinates>40.24892822944643,10.25705166808594,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_00003">
+			<name>Semiroby</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Semiroby</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>Zones</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Same_Block</td>
+
+<td>Semiroby</td>
+
+</tr>
+
+<tr>
+
+<td>Area_KM2</td>
+
+<td>1453.003753</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Sex_Ratio</td>
+
+<td>1.101543</td>
+
+</tr>
+
+<tr>
+
+<td>Popun_Density</td>
+
+<td>26.806538</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Perimeter_KM</td>
+
+<td>249.098951</td>
+
+</tr>
+
+<tr>
+
+<td>Percent</td>
+
+<td>1.458158</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ORIG_FID</td>
+
+<td>4</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle00</styleUrl>
+			<Point>
+				<coordinates>40.14598393922936,9.870169188911438,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_00004">
+			<name>Telalak</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Telalak</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>Zones</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Same_Block</td>
+
+<td>Telalak</td>
+
+</tr>
+
+<tr>
+
+<td>Area_KM2</td>
+
+<td>1261.944407</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Sex_Ratio</td>
+
+<td>1.360235</td>
+
+</tr>
+
+<tr>
+
+<td>Popun_Density</td>
+
+<td>36.940613</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Perimeter_KM</td>
+
+<td>175.12304</td>
+
+</tr>
+
+<tr>
+
+<td>Percent</td>
+
+<td>1.266421</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ORIG_FID</td>
+
+<td>5</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle00</styleUrl>
+			<Point>
+				<coordinates>40.29248595532934,10.97205401664085,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
