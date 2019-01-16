@@ -592,7 +592,7 @@ public class MainActivity extends AppCompatActivity
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                if(marker.equals("Zone1") || marker.equals("Zone2") || marker.equals("Zone3") || marker.equals("Zone4") || marker.equals("Zone5")) {
+                if(marker.getTitle().equals("Zone1") || marker.getTitle().equals("Zone2") || marker.getTitle().equals("Zone3") || marker.getTitle().equals("Zone4") || marker.getTitle().equals("Zone5")) {
                     Intent i = getZoneIntent(marker.getTitle());
                     startActivity(i);
                 }
