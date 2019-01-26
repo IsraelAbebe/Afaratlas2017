@@ -132,9 +132,10 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            Toast.makeText(getApplicationContext(), "Recent Works Clicked", Toast.LENGTH_LONG).show();
-        } else if (id == R.id.nav_gallery) {
+//        if (id == R.id.nav_camera) {
+//            Toast.makeText(getApplicationContext(), "Recent Works Clicked", Toast.LENGTH_LONG).show();
+//        } else
+        if (id == R.id.nav_gallery) {
             Intent i = new Intent(this, galleryShow.class);
             startActivity(i);
         } else if (id == R.id.nav_slideshow) {
@@ -193,11 +194,11 @@ public class MainActivity extends AppCompatActivity
         KmlLayer zone4Layer = null;
         KmlLayer zone5Layer = null;
 
-        KmlLayer zone1Layer_kml = null;
-        KmlLayer zone2Layer_kml = null;
-        KmlLayer zone3Layer_kml = null;
-        KmlLayer zone4Layer_kml = null;
-        KmlLayer zone5Layer_kml = null;
+//        KmlLayer zone1Layer_kml = null;
+//        KmlLayer zone2Layer_kml = null;
+//        KmlLayer zone3Layer_kml = null;
+//        KmlLayer zone4Layer_kml = null;
+//        KmlLayer zone5Layer_kml = null;
         try {
             ethiopiaLayer = new KmlLayer(mMap, R.raw.afarrigional, getApplicationContext());
             zone1Layer = new KmlLayer(mMap, R.raw.zone1, getApplicationContext());
